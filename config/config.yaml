@@ -1,0 +1,23 @@
+# SVAMITVA Pipeline Configuration
+
+label_mappings:
+ roof_codes:
+   "1": "RCC"
+   "2": "TILED"
+   "3": "TIN"
+   "4": "OTHERS"
+
+ utility_codes:
+   "1": "UTILITY_1"
+   "2": "UTILITY_2"
+   "3": "UTILITY_3"
+   "11": "UTILITY_11"
+
+inference_settings:
+ tile_size: 512
+ use_test_time_augmentation: false
+ use_histogram_matching: false
+ human_in_the_loop_thresholds:
+   green_min_confidence: 0.85
+   yellow_min_confidence: 0.60
+   red_max_confidence: 0.60
